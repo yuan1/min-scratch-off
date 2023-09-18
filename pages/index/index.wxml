@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="lucky-contnet">
+    <view class="date-number">
+      {{todayNumber}}
+    </view>
+    <view class="lucky-number">
+      <scratch width="80" height="80" size="5" circle></scratch>
+      <view class="number">{{luckyNumber}}</view>
+    </view>
+  </view>
+  <view class="prize-content">
+    <scratch width="320" height="204" size="8"></scratch>
+    <view class="prize-number">
+      <view class="number" wx:for="{{prizeData}}" wx:key="index">
+        <view class="{{item.lucky?'lucky':''}}">
+          <view>{{item.num}}</view>
+          <view>{{item.prize}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <button class="more-button" bind:tap="handleMore">再来一张</button>
+</view>

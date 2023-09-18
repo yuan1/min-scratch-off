@@ -1,0 +1,7 @@
+/**app.wxss**/
+page {
+  -webkit-overflow-scrolling: touch;
+}
+.container {
+  box-sizing: border-box;
+}

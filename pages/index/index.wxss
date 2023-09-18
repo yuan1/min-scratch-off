@@ -1,0 +1,76 @@
+/**index.wxss**/
+.container {
+  min-height: 1370rpx;
+  padding-top: 558rpx;
+  padding-bottom: 20rpx;
+  background-color: #c7000b;
+  background-image: url("https://z1.ax1x.com/2023/09/18/pP4K7y4.png");
+  background-size: 100% 1370rpx;
+  background-repeat: no-repeat;
+}
+
+.lucky-contnet,
+.prize-content {
+  position: relative;
+}
+
+.lucky-contnet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 160rpx;
+  line-height: 160rpx;
+  box-sizing: border-box;
+  padding: 0 62rpx;
+  color: white;
+}
+
+.lucky-contnet .lucky-number,
+.lucky-contnet .date-number {
+  width: 160rpx;
+  height: 100%;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.lucky-contnet .lucky-number {
+  position: relative;
+}
+
+.prize-content {
+  padding: 70rpx;
+}
+
+.lucky-contnet .lucky-number scratch,
+.prize-content scratch {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.prize-content scratch {
+  top: 48rpx;
+  left: 54rpx;
+}
+
+.prize-content .prize-number {
+  display: grid;
+  grid-template-columns: repeat(6, 100rpx);
+  grid-template-rows: repeat(3, 130rpx);
+}
+
+.prize-content .prize-number .number {
+  color: white;
+  text-align: center;
+}
+
+.prize-content .prize-number .number .lucky {
+  color: #ffcc16;
+}
+
+.more-button {
+  margin-top: 160rpx;
+  color: white;
+  background-color:#ffcc16; 
+}

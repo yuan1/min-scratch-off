@@ -1,0 +1,2 @@
+<!--components/scratch/scratch.wxml-->
+<canvas type="2d" id="myCanvas" style='width:{{width*2}}rpx;height: {{height*2}}rpx;' bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd"></canvas>
